@@ -15,7 +15,7 @@
                     "fid": "Дата выдачи",
                     "name": "Дата выдачи",
                     "basename": "Дата выдачи",
-                    "semanticType": "nominal",
+                    "semanticType": "temporal",
                     "analyticType": "dimension",
                     "offset": 0
                 },
@@ -322,6 +322,17 @@
             ],
             "rows": [
                 {
+                    "fid": "АКД №",
+                    "name": "АКД №",
+                    "basename": "АКД №",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "count",
+                    "offset": 0
+                }
+            ],
+            "columns": [
+                {
                     "fid": "Террит. Инспекция",
                     "name": "Террит. Инспекция",
                     "basename": "Террит. Инспекция",
@@ -329,16 +340,13 @@
                     "analyticType": "dimension",
                     "offset": 0,
                     "sort": "descending"
-                }
-            ],
-            "columns": [
+                },
                 {
-                    "fid": "АКД №",
-                    "name": "АКД №",
-                    "basename": "АКД №",
-                    "analyticType": "measure",
-                    "semanticType": "quantitative",
-                    "aggName": "count",
+                    "fid": "ВЭД",
+                    "name": "ВЭД",
+                    "basename": "ВЭД",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
                     "offset": 0
                 }
             ],
@@ -352,19 +360,37 @@
             "latitude": [],
             "geoId": [],
             "details": [],
-            "filters": [],
+            "filters": [
+                {
+                    "fid": "Дата выдачи",
+                    "name": "Дата выдачи",
+                    "basename": "Дата выдачи",
+                    "semanticType": "temporal",
+                    "analyticType": "dimension",
+                    "offset": 0,
+                    "rule": {
+                        "type": "temporal range",
+                        "value": [
+                            1717200000000,
+                            1730332800000
+                        ],
+                        "format": "timestamp",
+                        "offset": 0
+                    }
+                }
+            ],
             "text": []
         },
         "layout": {
-            "showActions": true,
-            "showTableSummary": true,
+            "showActions": false,
+            "showTableSummary": false,
             "stack": "stack",
             "interactiveScale": false,
             "zeroScale": true,
             "size": {
-                "mode": "auto",
-                "width": 320,
-                "height": 200
+                "mode": "fixed",
+                "width": 800,
+                "height": 600
             },
             "format": {},
             "geoKey": "name",
@@ -377,7 +403,7 @@
                 "size": false
             }
         },
-        "visId": "gw_uUa8",
+        "visId": "gw_NQE6",
         "name": "Chart 1"
     }
 ]

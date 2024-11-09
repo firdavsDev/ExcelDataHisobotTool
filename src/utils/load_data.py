@@ -1,6 +1,26 @@
 import pandas as pd
+import streamlit as st
 
 
+def change_column_type(column_name, column_type, df):
+    """
+    Change the data type of a column.
+
+    :param column_name: str
+    :param column_type: str (e.g. "int64", "float64
+    :param df: pandas DataFrame
+    :return: pandas DataFrame
+    """
+
+    if column_type == "datetime":
+        df[column_name] = pd.to_datetime(df[column_name], errors="coerce")
+    else:
+        df[column_name] = df[column_name].astype(column_type)
+
+    return df
+
+
+@st.cache_resource
 def load_data(file) -> pd.DataFrame:
     """
     Load data from an excel or csv file.
@@ -18,6 +38,8 @@ def load_data(file) -> pd.DataFrame:
     elif ext == "csv":
         dfs = pd.read_csv(file)
     else:
-        return None
+        raise ValueError("File type not supported")
+    # date format column(Дата выдачи) type
+    change_column_type("Дата выдачи", "datetime", dfs)
     # return the dataframe
     return dfs
