@@ -1,0 +1,383 @@
+[
+    {
+        "config": {
+            "defaultAggregated": true,
+            "geoms": [
+                "table"
+            ],
+            "coordSystem": "generic",
+            "limit": -1,
+            "timezoneDisplayOffset": 0
+        },
+        "encodings": {
+            "dimensions": [
+                {
+                    "fid": "Дата выдачи",
+                    "name": "Дата выдачи",
+                    "basename": "Дата выдачи",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Название организации",
+                    "name": "Название организации",
+                    "basename": "Название организации",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Ф.И.О. представителя",
+                    "name": "Ф.И.О. представителя",
+                    "basename": "Ф.И.О. представителя",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Тел. ",
+                    "name": "Тел. ",
+                    "basename": "Тел. ",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "СТРАНА ЭКСПОРТЕРА",
+                    "name": "СТРАНА ЭКСПОРТЕРА",
+                    "basename": "СТРАНА ЭКСПОРТЕРА",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Террит. Инспекция",
+                    "name": "Террит. Инспекция",
+                    "basename": "Террит. Инспекция",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "ВЭД",
+                    "name": "ВЭД",
+                    "basename": "ВЭД",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Ф.И.О ИНСПЕКТОРА",
+                    "name": "Ф.И.О ИНСПЕКТОРА",
+                    "basename": "Ф.И.О ИНСПЕКТОРА",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "ТРАНСПОРТНАЯ ЕДИНИЦА",
+                    "name": "ТРАНСПОРТНАЯ ЕДИНИЦА",
+                    "basename": "ТРАНСПОРТНАЯ ЕДИНИЦА",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "ТРАНСПОР №",
+                    "name": "ТРАНСПОР №",
+                    "basename": "ТРАНСПОР №",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "НАИМЕНОВАНИЕ ПРОДУКЦИИ",
+                    "name": "НАИМЕНОВАНИЕ ПРОДУКЦИИ",
+                    "basename": "НАИМЕНОВАНИЕ ПРОДУКЦИИ",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "ЕДИНИЦЫ ИЗМЕРЕНИЯ",
+                    "name": "ЕДИНИЦЫ ИЗМЕРЕНИЯ",
+                    "basename": "ЕДИНИЦЫ ИЗМЕРЕНИЯ",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Добавлено в",
+                    "name": "Добавлено в",
+                    "basename": "Добавлено в",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "БАЁННОМА №",
+                    "name": "БАЁННОМА №",
+                    "basename": "БАЁННОМА №",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Лаборатория хулосаси",
+                    "name": "Лаборатория хулосаси",
+                    "basename": "Лаборатория хулосаси",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "ДАТА ВЫДАЧИ",
+                    "name": "ДАТА ВЫДАЧИ",
+                    "basename": "ДАТА ВЫДАЧИ",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Фитосанитарное сертификат №",
+                    "name": "Фитосанитарное сертификат №",
+                    "basename": "Фитосанитарное сертификат №",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 24",
+                    "name": "Unnamed: 24",
+                    "basename": "Unnamed: 24",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 25",
+                    "name": "Unnamed: 25",
+                    "basename": "Unnamed: 25",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 26",
+                    "name": "Unnamed: 26",
+                    "basename": "Unnamed: 26",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 27",
+                    "name": "Unnamed: 27",
+                    "basename": "Unnamed: 27",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 29",
+                    "name": "Unnamed: 29",
+                    "basename": "Unnamed: 29",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 30",
+                    "name": "Unnamed: 30",
+                    "basename": "Unnamed: 30",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 31",
+                    "name": "Unnamed: 31",
+                    "basename": "Unnamed: 31",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 32",
+                    "name": "Unnamed: 32",
+                    "basename": "Unnamed: 32",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 33",
+                    "name": "Unnamed: 33",
+                    "basename": "Unnamed: 33",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0
+                },
+                {
+                    "fid": "gw_mea_key_fid",
+                    "name": "Measure names",
+                    "analyticType": "dimension",
+                    "semanticType": "nominal"
+                }
+            ],
+            "measures": [
+                {
+                    "fid": "АКД №",
+                    "name": "АКД №",
+                    "basename": "АКД №",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "ИНН организации",
+                    "name": "ИНН организации",
+                    "basename": "ИНН организации",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "ТН ВЭД",
+                    "name": "ТН ВЭД",
+                    "basename": "ТН ВЭД",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "ОБЩИЙ ВЕС НЕТТО",
+                    "name": "ОБЩИЙ ВЕС НЕТТО",
+                    "basename": "ОБЩИЙ ВЕС НЕТТО",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "КР №",
+                    "name": "КР №",
+                    "basename": "КР №",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "АКТ ОБЕЗЗАРАЖИВАНИЯ №",
+                    "name": "АКТ ОБЕЗЗАРАЖИВАНИЯ №",
+                    "basename": "АКТ ОБЕЗЗАРАЖИВАНИЯ №",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "Цена",
+                    "name": "Цена",
+                    "basename": "Цена",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "Unnamed: 28",
+                    "name": "Unnamed: 28",
+                    "basename": "Unnamed: 28",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "offset": 0
+                },
+                {
+                    "fid": "gw_count_fid",
+                    "name": "Row count",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum",
+                    "computed": true,
+                    "expression": {
+                        "op": "one",
+                        "params": [],
+                        "as": "gw_count_fid"
+                    }
+                },
+                {
+                    "fid": "gw_mea_val_fid",
+                    "name": "Measure values",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "sum"
+                }
+            ],
+            "rows": [
+                {
+                    "fid": "Террит. Инспекция",
+                    "name": "Террит. Инспекция",
+                    "basename": "Террит. Инспекция",
+                    "semanticType": "nominal",
+                    "analyticType": "dimension",
+                    "offset": 0,
+                    "sort": "descending"
+                }
+            ],
+            "columns": [
+                {
+                    "fid": "АКД №",
+                    "name": "АКД №",
+                    "basename": "АКД №",
+                    "analyticType": "measure",
+                    "semanticType": "quantitative",
+                    "aggName": "count",
+                    "offset": 0
+                }
+            ],
+            "color": [],
+            "opacity": [],
+            "size": [],
+            "shape": [],
+            "radius": [],
+            "theta": [],
+            "longitude": [],
+            "latitude": [],
+            "geoId": [],
+            "details": [],
+            "filters": [],
+            "text": []
+        },
+        "layout": {
+            "showActions": true,
+            "showTableSummary": true,
+            "stack": "stack",
+            "interactiveScale": false,
+            "zeroScale": true,
+            "size": {
+                "mode": "auto",
+                "width": 320,
+                "height": 200
+            },
+            "format": {},
+            "geoKey": "name",
+            "resolve": {
+                "x": false,
+                "y": false,
+                "color": false,
+                "opacity": false,
+                "shape": false,
+                "size": false
+            }
+        },
+        "visId": "gw_uUa8",
+        "name": "Chart 1"
+    }
+]
