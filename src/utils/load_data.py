@@ -39,7 +39,5 @@ def load_data(file) -> pd.DataFrame:
         dfs = pd.read_csv(file)
     else:
         raise ValueError("File type not supported")
-    # date format column(Дата выдачи) type
-    change_column_type("Дата выдачи", "datetime", dfs)
     # return the dataframe
     return dfs

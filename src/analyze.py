@@ -1,5 +1,5 @@
 from .pyg import get_pyg_renderer
-from .utils.load_data import load_data
+from .utils.load_data import change_column_type, load_data
 from .utils.my_logger import log_function, set_up_logger
 
 logger = set_up_logger()
@@ -24,6 +24,8 @@ def analyze_data(uploaded_file, uploaded_spec=None):
     """
     # Load data
     dfs = load_data(uploaded_file)
+    # TODO date format column(Дата выдачи) type
+    dfs = change_column_type("Дата выдачи", "datetime", dfs)
     # Check if uploaded_spec is not None
     if uploaded_spec is not None:
         print(uploaded_spec)
