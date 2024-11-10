@@ -10,11 +10,20 @@ def get_footer(st):
                 right: 0;
                 padding: 10px;
                 text-align: center;
+                font-size: 16px;
+                font-family: Arial, sans-serif;
             }
         </style>
         """,
         unsafe_allow_html=True,
     )
     st.markdown(
-        '<p class="footer">Made with ❤️ by UzDavKarantin</p>', unsafe_allow_html=True
+        """
+        <p class="footer">
+        <b>
+        Made with ❤️ by <a href="https://karantin.uz" target="_blank">UzDavKarantin</a>
+        </b>
+        </p>
+        """,
+        unsafe_allow_html=True,
     )

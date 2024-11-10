@@ -4,29 +4,21 @@ My cool app for analyzing excel & csv files.
 
 import streamlit as st
 
-from src.analyze import analyze_data
-from src.pages.config import get_st_config
-from src.pages.footer import get_footer
-from src.pages.sidebar import get_sidebar
-from src.utils.my_logger import set_up_logger
-
-# Set up logger
-logger = set_up_logger()
-
-# Set up Streamlit page configuration
-st_config = get_st_config()
-st.set_page_config(**st_config)
-
-# Sidebar
-uploaded_file, uploaded_spec = get_sidebar(st=st)
-
-# Main content
-st.title("Excel & CSV Analyzer")
-
-if uploaded_file:
-    # Analyze data (uploaded_spec)
-    analyze_data(uploaded_file, uploaded_spec=None).explorer()
+from src.cookies import cookies
 
 
-# Footer in bottom of the page(st=st)
-get_footer(st=st)
+# main function
+def main(st: st) -> None:
+    # check if user is logged in
+    is_logged_in = cookies.get("is_logged_in")
+    if is_logged_in == "logged_in":
+        # switch to home page
+        st.switch_page("pages/home.py")
+    else:
+        # switch to login page
+        st.switch_page("pages/login.py")
+
+
+if __name__ == "__main__":
+    # Run the main function
+    main(st=st)

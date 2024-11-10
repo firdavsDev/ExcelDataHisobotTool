@@ -20,7 +20,7 @@ def change_column_type(column_name, column_type, df):
     return df
 
 
-@st.cache_resource
+@st.cache_data
 def load_data(file) -> pd.DataFrame:
     """
     Load data from an excel or csv file.
@@ -33,10 +33,10 @@ def load_data(file) -> pd.DataFrame:
     name, ext = file.name.split(".")
     # check if the file is an excel file
     if ext == "xlsx":
-        dfs = pd.read_excel(file)
+        dfs = pd.read_excel(file, engine="openpyxl", low_memory=False)
     # check if the file is a csv file
     elif ext == "csv":
-        dfs = pd.read_csv(file)
+        dfs = pd.read_csv(file, low_memory=False)
     else:
         raise ValueError("File type not supported")
     # return the dataframe

@@ -1,3 +1,6 @@
+from .logout import logout
+
+
 # sidebar
 def get_sidebar(st) -> tuple:
     st.sidebar.title("UzDavKarantin")
@@ -15,4 +18,8 @@ def get_sidebar(st) -> tuple:
         key="spec",
         help="Spec fayl yuklash (agar mavjud bo'lsa)",
     )
+    # logout button
+    if st.sidebar.button("Chiqish", type="secondary"):
+        return logout(st)
+
     return uploaded_file, uploaded_spec

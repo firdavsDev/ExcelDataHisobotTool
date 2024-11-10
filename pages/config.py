@@ -2,7 +2,7 @@
 def get_st_config():
     return {
         "page_title": "Excel & CSV Analyzer",
-        "page_icon": ":snake:",
+        "page_icon": "📊",
         "layout": "wide",
         "initial_sidebar_state": "expanded",
     }
