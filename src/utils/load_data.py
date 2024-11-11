@@ -33,7 +33,7 @@ def load_data(file) -> pd.DataFrame:
     name, ext = file.name.split(".")
     # check if the file is an excel file
     if ext == "xlsx":
-        dfs = pd.read_excel(file, engine="openpyxl", low_memory=False)
+        dfs = pd.read_excel(file, engine="openpyxl")
     # check if the file is a csv file
     elif ext == "csv":
         dfs = pd.read_csv(file, low_memory=False)
